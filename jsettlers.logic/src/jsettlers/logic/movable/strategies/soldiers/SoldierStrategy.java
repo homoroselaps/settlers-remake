@@ -14,7 +14,6 @@
  *******************************************************************************/
 package jsettlers.logic.movable.strategies.soldiers;
 
-import jsettlers.algorithms.path.Path;
 import jsettlers.common.buildings.OccupyerPlace;
 import jsettlers.common.movable.EDirection;
 import jsettlers.common.movable.EMovableType;
@@ -309,7 +308,7 @@ public abstract class SoldierStrategy extends MovableStrategy implements IBuildi
 	protected boolean isAbleToMove() {
 		return state != ESoldierState.INIT_GOTO_TOWER && state != ESoldierState.GOING_TO_TOWER && !isInTower;
 	}
-
+	
 	@Override
 	protected Path findWayAroundObstacle(EDirection direction, ShortPoint2D position, Path path) {
 		if (state == ESoldierState.SEARCH_FOR_ENEMIES) {

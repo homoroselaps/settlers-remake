@@ -16,7 +16,6 @@ package jsettlers.logic.movable;
 
 import java.io.Serializable;
 
-import jsettlers.algorithms.path.Path;
 import jsettlers.common.material.EMaterialType;
 import jsettlers.common.material.ESearchType;
 import jsettlers.common.movable.EDirection;
