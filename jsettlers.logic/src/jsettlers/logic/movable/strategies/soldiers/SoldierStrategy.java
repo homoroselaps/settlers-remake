@@ -335,7 +335,7 @@ public abstract class SoldierStrategy extends MovableStrategy implements IBuildi
 				} else if (grid.isFreePosition(twoRightPos)) {
 					return new Path(twoRightPos);
 				} else {
-					return path;
+					return null;
 				}
 			}
 		} else {
