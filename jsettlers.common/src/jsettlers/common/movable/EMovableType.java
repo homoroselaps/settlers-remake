@@ -136,7 +136,7 @@ public enum EMovableType {
 		return health;
 	}
 
-	public final boolean isMoveToAble() {
+	public final boolean isPlayerControllable() {
 		return !needsPlayersGround;
 	}
 
